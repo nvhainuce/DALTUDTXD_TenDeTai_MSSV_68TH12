@@ -10,7 +10,7 @@
         <Ribbon Grid.Row="0" Background="#FFDDE7F4">
             <RibbonTab Header="Dữ liệu" >
                 <RibbonGroup Header="Etabs API">
-                    <RibbonButton Label="Kết nối Etabs"
+                    <RibbonButton x:Name="rbt_KetNoiEtabs" Label="Kết nối Etabs"
                             LargeImageSource="/Assets/Icons/AddLink.png"/>
 
                    
@@ -39,7 +39,11 @@
                                  LargeImageSource="/Assets/Icons/Query Inner Join Right.png"/>
                 </RibbonGroup>
             </RibbonTab>
-                
+
+
+            <RibbonTab Header="Thiết kế">
+
+            </RibbonTab>
         </Ribbon>
         
     </Grid>
