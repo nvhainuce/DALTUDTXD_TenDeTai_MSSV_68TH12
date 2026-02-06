@@ -13,8 +13,7 @@
                     <RibbonButton Label="Kết nối Etabs"
                             LargeImageSource="/Assets/Icons/AddLink.png"/>
 
-                    <RibbonButton x:Name="rbt_2Dplan" Label="Mặt bằng 2D" Click="rbt_2Dplan_Click"
-                              SmallImageSource="/Assets/Icons/Bookmark.png"/>
+                   
                     <RibbonCheckBox Label="Lấy dữ liệu tự động"/>
                     <RibbonComboBox Label="Chọn loại kết cấu"
                                SmallImageSource="/Assets/Icons/Download from the Cloud.png">
@@ -29,9 +28,18 @@
                 </RibbonGroup>
 
             </RibbonTab>
-            
-            
-            
+
+            <RibbonTab Header="Hiển thị">
+                <RibbonGroup Header="Chế độ hiển thị">
+                    <RibbonButton x:Name="rbt_2Dplan" Label="Mặt bằng 2D" Click="rbt_2Dplan_Click"
+                       SmallImageSource="/Assets/Icons/Bookmark.png"/>
+                    <RibbonToggleButton x:Name="rtb_3Dview" Label="Chế độ 3D" Click="rtb_3Dview_Click"
+                                 LargeImageSource="/Assets/Icons/Share.png"/>
+                    <RibbonToggleButton x:Name="rtb_2Dview" Label="Chế độ 2D" Click="rtb_2Dview_Click"
+                                 LargeImageSource="/Assets/Icons/Query Inner Join Right.png"/>
+                </RibbonGroup>
+            </RibbonTab>
+                
         </Ribbon>
         
     </Grid>
