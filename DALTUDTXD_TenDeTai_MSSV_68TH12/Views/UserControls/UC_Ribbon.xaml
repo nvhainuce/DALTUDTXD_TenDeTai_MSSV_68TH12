@@ -7,10 +7,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="150" d:DesignWidth="800">
     <Grid>
-        <Ribbon Grid.Row="0" Background="#FFDDE7F4">
+        <Ribbon Grid.Row="0" SelectedIndex="0" Background="#FFDDE7F4">
             <RibbonTab Header="Dữ liệu" >
                 <RibbonGroup Header="Etabs API">
                     <RibbonButton x:Name="rbt_KetNoiEtabs" Label="Kết nối Etabs"
+                                  Click="rbt_KetNoiEtabs_Click"
                             LargeImageSource="/Assets/Icons/AddLink.png"/>
 
                    
@@ -33,9 +34,9 @@
                 <RibbonGroup Header="Chế độ hiển thị">
                     <RibbonButton x:Name="rbt_2Dplan" Label="Mặt bằng 2D" Click="rbt_2Dplan_Click"
                        SmallImageSource="/Assets/Icons/Bookmark.png"/>
-                    <RibbonToggleButton x:Name="rtb_3Dview" Label="Chế độ 3D" Click="rtb_3Dview_Click"
+                    <RibbonToggleButton x:Name="rtb_3Dview" Label="Chế độ 3D" 
                                  LargeImageSource="/Assets/Icons/Share.png"/>
-                    <RibbonToggleButton x:Name="rtb_2Dview" Label="Chế độ 2D" Click="rtb_2Dview_Click"
+                    <RibbonToggleButton x:Name="rtb_2Dview" Label="Chế độ 2D" 
                                  LargeImageSource="/Assets/Icons/Query Inner Join Right.png"/>
                 </RibbonGroup>
             </RibbonTab>
